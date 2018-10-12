@@ -52,9 +52,11 @@ div h1{
 input:not([type="submit"]){
     margin-top: 10px;
     padding: 8px;
-    background:linear-gradient(#476c78,#223c45);
+    background:linear-gradient(45deg, #223c45, #476c78, #223c45);
     border: solid 1px #324954;
     border-bottom-color: #e3e5e6;
+    outline: none;
+    color: #cacacf;
 }
 input::placeholder{
     color: #cacacf;
@@ -62,7 +64,7 @@ input::placeholder{
 }
 input:focus::placeholder{color: transparent;}
 input:invalid:not(:placeholder-shown) {border-color: red;}
-input:valid:not(:placeholder-shown) {border-color: green;}
+input:valid:not(:placeholder-shown) {border-color: #00fc00;}
 label[for="College"]{
     margin: 15px 0;
 }
@@ -73,7 +75,10 @@ select{
     color: #ffffff;
     padding: 5px;
     width: 8vw;
-    
+}
+
+select > option{
+    color: #223c45;
 }
 fieldset{
     display: flex;
