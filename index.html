@@ -17,7 +17,7 @@
             <input type="text" name="UserLastName" placeholder="Фамилия" pattern="[A-Za-zА-Яа-яЁё]{2,16}" autocomplete="off" required>
             <input type="text" name="UserFatherName" placeholder="Отчество" pattern="[A-Za-zА-Яа-яЁё]{4,16}" autocomplete="off" required>
             <input type="email" name ="Email" placeholder="Email" autocomplete="off" required>
-            <input type="password" name="Password" placeholder="Пароль"  pattern="(?=.*\d)(?=.*[!@#$%^&*])(?=.*[A-Z]).{6,12}" required>
+            <input type="password" name="Password" placeholder="Пароль"  pattern="(?=.*\d)(?=(.*[!@#$%^&*]){3,})(?=(.*[A-Z]){2,}).{6,12}" required>
             <input type="text" name="Login" placeholder="Логин"  pattern=".{4,}" autocomplete="off" required>
             
             <label for="College">Ваше учебное заведение:
